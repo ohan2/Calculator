@@ -20,18 +20,24 @@ function calculateGPA(arr) {
 
     var averageGPA = sum / arr.length;
 
-    if (averageGPA > 80) {
+    if (averageGPA > 90) {
         return "A";
     }
-    else if (averageGPA <= 80 && averageGPA > 70) {
+    else if (aaverageGPA > 80) {
         return "B";
     }
-    else if (averageGPA <=70) {
+    else if (averageGPA > 70) {
+        return "C";
+    }
+    else if (averageGPA > 60) {
+        return "D";
+    }
+    else {
         return "C";
     }
 
 }
 
-var grades = ["C", "B", "C", "A", "A", "A"];
+var grades = ["C", "D", "B", "C", "A", "A", "A"];
 console.log("The average GPA is: " + calculateGPA(grades));
 document.write("The average GPA is: " + calculateGPA(grades));
