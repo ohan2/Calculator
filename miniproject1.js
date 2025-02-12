@@ -12,6 +12,12 @@ function calculateGPA(arr) {
             else if (arr[i] === "C") {
                 sum += 70;
             }
+            else if (arr[i] === "D") {
+                sum += 60;
+            }
+            else if (arr[i] === "F") {
+                sum += 50;
+            }
             else {
                 console.log("Invalid element at position " + i);
                 break;
@@ -33,7 +39,7 @@ function calculateGPA(arr) {
         return "D";
     }
     else {
-        return "C";
+        return "F";
     }
 
 }
