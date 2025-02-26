@@ -29,7 +29,7 @@ function calculateGPA(arr) {
     if (averageGPA > 90) {
         return "A";
     }
-    else if (aaverageGPA > 80) {
+    else if (averageGPA > 80) {
         return "B";
     }
     else if (averageGPA > 70) {
@@ -43,7 +43,3 @@ function calculateGPA(arr) {
     }
 
 }
-
-var grades = ["C", "D", "B", "C", "A", "A", "A"];
-console.log("The average GPA is: " + calculateGPA(grades));
-document.write("The average GPA is: " + calculateGPA(grades));
